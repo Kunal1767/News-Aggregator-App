@@ -1,16 +1,17 @@
-import React from "react";
-import "./App.css";
-import Weather from "./weather"; // Import the Weather component
 
-function App() {
+import React from 'react'
+import {NewsHeader} from './components/JSX/NewsHeader'
+import { NewsFooter } from './components/JSX/NewsFooter'
+import { NewsHome } from './components/JSX/NewsHome'
+import './App.css'
+const App = () => {
   return (
-    <>
-      <div>
-        <h1>Weather App</h1>
-        <Weather /> {/* Display the weather component */}
-      </div>
-    </>
-  );
+    <div>
+      <NewsHeader/>
+      <NewsHome/>
+      <NewsFooter/>
+    </div>
+  )
 }
 
 export default App;
