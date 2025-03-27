@@ -1,0 +1,150 @@
+.home_page{
+    height: auto;
+    /* width: 80vw; */
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.news-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  
+  .news-card {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .news-card:hover .card-image img {
+    transform: scale(1.05);
+  }
+  
+  .card-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  .card-excerpt {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .meta-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .meta-info svg {
+    color: #007bff;
+  }
+  
+  .meta-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .meta-date {
+    color: #666;
+    font-size: 0.8rem;
+  }
+  
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .btn-bookmark:hover,
+  .btn-share:hover,
+  .btn-read-more:hover {
+    color: #007bff;
+  }
+  
+  .btn-read-more {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .btn-read-more:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  @media (max-width: 992px) {
+    .news-cards-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
