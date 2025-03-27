@@ -1,3 +1,4 @@
+
 import React from 'react'
 import {NewsHeader} from './components/JSX/NewsHeader'
 import { NewsFooter } from './components/JSX/NewsFooter'
@@ -13,4 +14,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
