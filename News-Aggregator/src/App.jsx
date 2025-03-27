@@ -9,8 +9,10 @@ const App = () => {
       <NewsHeader/>
       <NewsHome/>
       <NewsFooter/>
+
     </div>
   )
 }
 
 export default App;
+
